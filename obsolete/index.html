@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      background-color: rgb(251, 204, 12);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .avatar {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .band-name {
+      color: white;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .icon-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 300px;
+      width: 100%;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .icon-row:hover {
+      background-color: #555;
+    }
+    .icon-row:active {
+      background-color: #222;
+    }
+    .icon {
+      font-size: 2em;
+      color: white;
+      margin-right: 10px;
+    }
+    .text {
+      color: white;
+      text-decoration: none;
+    }
+    .dot {
+      height: 2px;
+      width: 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .dot.red {
+      background-color: #f00;
+    }
+    .dot.blue {
+      background-color: #00f;
+    }
+  </style>
+</head>
+<body>
+  <img src="avatar.jpg" alt="Band Avatar" class="avatar">
+  <div class="band-name">CIENIU</div>
+  <div class="icon-row">
+    <i class="fab fa-spotify icon"></i>
+    <a href="#" class="text" target="_blank">Spotify</a>
+  </div>
+  <div class="icon-row">
+    <i class="fab fa-facebook-f icon"></i>
+    <a href="#" class="text" target="_blank">Facebook</a>
+  </div>
+  <div class="icon-row">
+    <i class="fab fa-instagram icon"></i>
+    <a href="#" class="text" target="https://www.instagram.com/_cieniu_/">Instagram</a>
+  </div>
+  <div class="icon-row">
+    <i class="fas fa-donate icon"></i>
+    <a href="#" class="text" target="_blank">Donate</a>
+  </div>
+  <div class="dot" style="top: 10%; left: 20%;"></div>
+  <div class="dot red" style="top: 30%; left: 40%;"></div>
+  <div class="dot blue" style="top: 50%; left: 60%;"></div>
+</body>
+</html>
